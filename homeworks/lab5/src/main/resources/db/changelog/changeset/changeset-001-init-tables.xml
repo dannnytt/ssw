@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <changeSet id="1" author="dannnytt">
+
+        <sql>
+            CREATE TYPE pet_status_enum AS ENUM('AVAILABLE', 'PENDING', 'SOLD');
+        </sql>
+
+        <createTable tableName="categories">
+            <column name="category_id" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="category_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+            
+        <createTable tableName="tags">
+            <column name="tag_id" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="tag_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="pets">
+            <column name="pet_id" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="pet_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="category_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pet_status" type="pet_status_enum">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="pets_tags">
+            <column name="pet_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="tag_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey constraintName="pk_pets_tags"
+                       tableName="pets_tags"
+                       columnNames="pet_id, tag_id"/>
+
+        <addForeignKeyConstraint baseTableName="pets"
+                                 baseColumnNames="category_id"
+                                 referencedTableName="categories"
+                                 referencedColumnNames="category_id"
+                                 constraintName="fk_pets_category"/>
+
+        <addForeignKeyConstraint baseTableName="pets_tags"
+                                 baseColumnNames="pet_id"
+                                 referencedTableName="pets"
+                                 referencedColumnNames="pet_id"
+                                 constraintName="fk_pets_tags_pet"/>
+
+        <addForeignKeyConstraint baseTableName="pets_tags"
+                                 baseColumnNames="tag_id"
+                                 referencedTableName="tags"
+                                 referencedColumnNames="tag_id"
+                                 constraintName="fk_pets_tags_tag"/>
+
+    </changeSet>
+</databaseChangeLog>

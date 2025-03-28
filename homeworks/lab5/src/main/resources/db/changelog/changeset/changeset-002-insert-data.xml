@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    
+    <changeSet id="2" author="dannnytt">
+
+        <insert tableName="categories">
+            <column name="category_name" value="Dogs"/>
+        </insert>
+
+        <insert tableName="categories">
+            <column name="category_name" value="Cats"/>
+        </insert>
+
+        <insert tableName="tags">
+            <column name="tag_name" value="Friendly"/>
+        </insert>
+
+        <insert tableName="tags">
+            <column name="tag_name" value="Unfriendly"/>
+        </insert>
+
+        <insert tableName="tags">
+            <column name="tag_name" value="Quiet"/>
+        </insert>
+
+        <insert tableName="tags">
+            <column name="tag_name" value="Noisy"/>
+        </insert>
+
+        <insert tableName="pets">
+            <column name="pet_name" value="Tuzik"/>
+            <column name="category_id" value="1"/>
+            <column name="pet_status" value="PENDING"/>
+        </insert>
+
+        <insert tableName="pets">
+            <column name="pet_name" value="Barsik"/>
+            <column name="category_id" value="2"/>
+            <column name="pet_status" value="AVAILABLE"/>
+        </insert>
+
+        <insert tableName="pets_tags">
+            <column name="pet_id" value="1"/>
+            <column name="tag_id" value="1" />
+        </insert>
+
+        <insert tableName="pets_tags">
+            <column name="pet_id" value="1"/>
+            <column name="tag_id" value="4" />
+        </insert>
+
+        <insert tableName="pets_tags">
+            <column name="pet_id" value="2"/>
+            <column name="tag_id" value="2" />
+        </insert>
+
+        <insert tableName="pets_tags">
+            <column name="pet_id" value="2"/>
+            <column name="tag_id" value="3" />
+        </insert>
+
+    </changeSet>
+    
+</databaseChangeLog>
