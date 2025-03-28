@@ -10,6 +10,8 @@
 
 ## [Homework #4. REST PetService](/homeworks/lab4/)
 
+## [Homework #5. REST PetService with Migrations](/homeworks/lab5/)
+
 
 ## Testworks ⏱️🖥️
 
