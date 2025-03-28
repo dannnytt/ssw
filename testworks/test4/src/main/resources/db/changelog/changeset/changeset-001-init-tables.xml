@@ -1,0 +1,45 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="3" author="dannnytt">
+        
+        <createTable tableName="universities">
+            <column name="university_id" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="university_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="university_phone" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        
+        <createTable tableName="institutes">
+            <column name="institute_id" type="int" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="institute_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="institute_phone" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="university_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint
+                baseTableName="institutes"
+                baseColumnNames="university_id"
+                constraintName="fk_institute_university"
+                referencedTableName="universities"
+                referencedColumnNames="university_id"
+                onDelete="CASCADE"/>
+        
+    </changeSet>
+</databaseChangeLog>
