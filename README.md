@@ -8,7 +8,7 @@
 
 ## [Homework #3. SimpleSpringBootApp](/homeworks/lab3/)
 
-## [Homework #3. REST PetService](/homeworks/lab4/)
+## [Homework #4. REST PetService](/homeworks/lab4/)
 
 
 ## Testworks ⏱️🖥️
