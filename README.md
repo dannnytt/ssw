@@ -6,6 +6,8 @@
 
 ## [Homework #2. MultithreadedCalculationSimulation](/homeworks/lab2/MultithreadedCalculationSimulation/)
 
+## [Homework #3. SimpleSpringBootApp](/homeworks/lab3/)
+
 
 ## Testworks ⏱️🖥️
 
