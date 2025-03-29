@@ -1,4 +1,4 @@
-# 📚 Server-Side Web (SSW)
+# 🌐 Server-Side Web (SSW)
 
 ## Homeworks 🖥️
 
