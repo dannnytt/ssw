@@ -1,5 +1,8 @@
 # 🌐 Server-Side Web (SSW)
 
+> Homeworks and testworks on the discipline "Разработка серверного ПО"  
+> SibSUTIS, 09.03.01, 6 semestr, 2025 
+
 ## Homeworks 🖥️
 
 * Homework #1 | [📄 Task description](/docs/homework1.pdf/) | [🖥️ Code](/homeworks/lab1/FilterTool/) 
