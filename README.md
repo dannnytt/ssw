@@ -2,23 +2,23 @@
 
 ## Homeworks 🖥️
 
-## [Homework #1. FileContentFilter](/homeworks/lab1/FilterTool/)
+* Homework #1 | [📄 Task description](/docs/homework1.pdf/) | [🖥️ Code](/homeworks/lab1/FilterTool/) 
 
-## [Homework #2. MultithreadedCalculationSimulation](/homeworks/lab2/MultithreadedCalculationSimulation/)
+* Homework #2 | [📄 Task description](/docs/homework2.pdf/) | [🖥️ Code](/homeworks/lab2/MultithreadedCalculationSimulation/) 
 
-## [Homework #3. SimpleSpringBootApp](/homeworks/lab3/)
+* Homework #3 | [📄 Task description](/docs/homework3.pdf/) | [🖥️ Code](/homeworks/lab3/) 
 
-## [Homework #4. REST PetService](/homeworks/lab4/)
+* Homework #4 | [📄 Task description](/docs/homework4.pdf.pdf/) | [🖥️ Code](/homeworks/lab4/) 
 
-## [Homework #5. REST PetService with Migrations](/homeworks/lab5/)
+* Homework #5 | [📄 Task description](/docs/homework5.pdf/) | [🖥️ Code](/homeworks/lab5/) 
 
 
 ## Testworks ⏱️🖥️
 
-## [Testwork #1](/testworks/test1/TestWork/)
+* Testwork #1 | [🖥️ Code](/testworks/test1/TestWork/)
 
-## [Testwork #2](/testworks/test2/)
+* Testwork #2 | [🖥️ Code](/testworks/test2/)
 
-## [Testwork #3](/testworks/test3/)
+* Testwork #3 | [🖥️ Code](/testworks/test3/)
 
-## [Testwork #4](/testworks/test4/)
+* Testwork #4 | [🖥️ Code](/testworks/test4/)
