@@ -1,0 +1,757 @@
+2025-04-03T01:12:22.492+07:00  INFO 5584 --- [main] io.swagger.Swagger2SpringBoot            : Starting Swagger2SpringBoot using Java 21.0.6 with PID 5584 (/home/dannnytt/study/sibsutis/6sem/rspo/homeworks/lab6/target/classes started by dannnytt in /home/dannnytt/study/sibsutis/6sem/rspo/homeworks/lab6)
+2025-04-03T01:12:22.500+07:00 DEBUG 5584 --- [main] io.swagger.Swagger2SpringBoot            : Running with Spring Boot v3.3.3, Spring v6.1.12
+2025-04-03T01:12:22.500+07:00  INFO 5584 --- [main] io.swagger.Swagger2SpringBoot            : No active profile set, falling back to 1 default profile: "default"
+2025-04-03T01:12:23.100+07:00  INFO 5584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03T01:12:23.146+07:00  INFO 5584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2025-04-03T01:12:23.511+07:00  INFO 5584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-03T01:12:23.520+07:00  INFO 5584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-03T01:12:23.520+07:00  INFO 5584 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-04-03T01:12:23.553+07:00  INFO 5584 --- [main] o.a.c.c.C.[.[localhost].[/api/v3]        : Initializing Spring embedded WebApplicationContext
+2025-04-03T01:12:23.553+07:00  INFO 5584 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1020 ms
+2025-04-03T01:12:23.887+07:00  INFO 5584 --- [main] liquibase.database                       : Set default schema name to public
+2025-04-03T01:12:24.063+07:00  INFO 5584 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-03T01:12:24.089+07:00  INFO 5584 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-04-03T01:12:24.090+07:00  INFO 5584 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-03T01:12:24.095+07:00  INFO 5584 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-04-03T01:12:24.095+07:00  INFO 5584 --- [main] liquibase.util                           : Run:                          0
+2025-04-03T01:12:24.095+07:00  INFO 5584 --- [main] liquibase.util                           : Previously run:               1
+2025-04-03T01:12:24.096+07:00  INFO 5584 --- [main] liquibase.util                           : Filtered out:                 0
+2025-04-03T01:12:24.096+07:00  INFO 5584 --- [main] liquibase.util                           : -------------------------------
+2025-04-03T01:12:24.096+07:00  INFO 5584 --- [main] liquibase.util                           : Total change sets:            1
+2025-04-03T01:12:24.096+07:00  INFO 5584 --- [main] liquibase.util                           : Update summary generated
+2025-04-03T01:12:24.112+07:00  INFO 5584 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2025-04-03T01:12:24.115+07:00  INFO 5584 --- [main] liquibase.command                        : Command execution complete
+2025-04-03T01:12:24.166+07:00  INFO 5584 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03T01:12:24.202+07:00  INFO 5584 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-04-03T01:12:24.221+07:00  INFO 5584 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-03T01:12:24.439+07:00  INFO 5584 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03T01:12:24.455+07:00  INFO 5584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-03T01:12:24.492+07:00  INFO 5584 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@484a5ddd
+2025-04-03T01:12:24.495+07:00  INFO 5584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-03T01:12:24.523+07:00  WARN 5584 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03T01:12:25.124+07:00  INFO 5584 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03T01:12:25.169+07:00  INFO 5584 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:12:25.385+07:00  INFO 5584 --- [main] io.swagger.service.CommentService        : CommentService initialized with CommentRepository
+2025-04-03T01:12:25.391+07:00 DEBUG 5584 --- [main] i.swagger.controller.CommentController   : CommentController initialized with CommentService
+2025-04-03T01:12:25.466+07:00  WARN 5584 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03T01:12:25.707+07:00  INFO 5584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v3'
+2025-04-03T01:12:25.714+07:00  INFO 5584 --- [main] io.swagger.Swagger2SpringBoot            : Started Swagger2SpringBoot in 3.49 seconds (process running for 3.787)
+2025-04-03T01:16:15.576+07:00  INFO 5584 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[localhost].[/api/v3]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-03T01:16:15.576+07:00  INFO 5584 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-03T01:16:15.577+07:00  INFO 5584 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-03T01:17:53.218+07:00  INFO 5584 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:17:53.220+07:00  INFO 5584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-03T01:17:53.222+07:00  INFO 5584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-03T01:18:38.231+07:00  INFO 6157 --- [main] i.s.service.CommentServiceRepositoryIT   : Testcontainers PostgreSQL configured: jdbc:postgresql://localhost:32769/testdb?loggerLevel=OFF
+2025-04-03T01:18:38.237+07:00  INFO 6157 --- [main] i.s.service.CommentServiceRepositoryIT   : Starting CommentServiceRepositoryIT using Java 21.0.6 with PID 6157 (started by dannnytt in /home/dannnytt/study/sibsutis/6sem/rspo/homeworks/lab6)
+2025-04-03T01:18:38.237+07:00 DEBUG 6157 --- [main] i.s.service.CommentServiceRepositoryIT   : Running with Spring Boot v3.3.3, Spring v6.1.12
+2025-04-03T01:18:38.237+07:00  INFO 6157 --- [main] i.s.service.CommentServiceRepositoryIT   : The following 1 profile is active: "test"
+2025-04-03T01:18:38.796+07:00  INFO 6157 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03T01:18:38.841+07:00  INFO 6157 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2025-04-03T01:18:39.223+07:00  INFO 6157 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-03T01:18:39.232+07:00  INFO 6157 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-03T01:18:39.232+07:00  INFO 6157 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-04-03T01:18:39.267+07:00  INFO 6157 --- [main] o.a.c.c.C.[.[localhost].[/api/v3]        : Initializing Spring embedded WebApplicationContext
+2025-04-03T01:18:39.267+07:00  INFO 6157 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1015 ms
+2025-04-03T01:18:39.579+07:00  INFO 6157 --- [main] liquibase.database                       : Set default schema name to public
+2025-04-03T01:18:39.778+07:00  INFO 6157 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-03T01:18:39.810+07:00  INFO 6157 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-04-03T01:18:39.811+07:00  INFO 6157 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-03T01:18:39.817+07:00  INFO 6157 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-04-03T01:18:39.817+07:00  INFO 6157 --- [main] liquibase.util                           : Run:                          0
+2025-04-03T01:18:39.817+07:00  INFO 6157 --- [main] liquibase.util                           : Previously run:               1
+2025-04-03T01:18:39.817+07:00  INFO 6157 --- [main] liquibase.util                           : Filtered out:                 0
+2025-04-03T01:18:39.817+07:00  INFO 6157 --- [main] liquibase.util                           : -------------------------------
+2025-04-03T01:18:39.817+07:00  INFO 6157 --- [main] liquibase.util                           : Total change sets:            1
+2025-04-03T01:18:39.817+07:00  INFO 6157 --- [main] liquibase.util                           : Update summary generated
+2025-04-03T01:18:39.830+07:00  INFO 6157 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2025-04-03T01:18:39.830+07:00  INFO 6157 --- [main] liquibase.command                        : Command execution complete
+2025-04-03T01:18:39.877+07:00  INFO 6157 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03T01:18:39.907+07:00  INFO 6157 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-04-03T01:18:39.925+07:00  INFO 6157 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-03T01:18:40.131+07:00  INFO 6157 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03T01:18:40.150+07:00  INFO 6157 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-03T01:18:40.164+07:00  INFO 6157 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@40b678b3
+2025-04-03T01:18:40.165+07:00  INFO 6157 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-03T01:18:40.185+07:00  WARN 6157 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03T01:18:40.719+07:00  INFO 6157 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03T01:18:40.753+07:00  INFO 6157 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:18:40.960+07:00  INFO 6157 --- [main] io.swagger.service.CommentService        : CommentService initialized with CommentRepository
+2025-04-03T01:18:40.970+07:00 DEBUG 6157 --- [main] i.swagger.controller.CommentController   : CommentController initialized with CommentService
+2025-04-03T01:18:41.078+07:00  WARN 6157 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03T01:18:41.388+07:00  INFO 6157 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 46369 (http) with context path '/api/v3'
+2025-04-03T01:18:41.396+07:00  INFO 6157 --- [main] i.s.service.CommentServiceRepositoryIT   : Started CommentServiceRepositoryIT in 3.355 seconds (process running for 25.484)
+2025-04-03T01:18:41.868+07:00  INFO 6157 --- [main] io.swagger.service.CommentService        : Creating new comment. Content length: 12, Author: provided
+2025-04-03T01:18:41.868+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting content (length: 12)
+2025-04-03T01:18:41.868+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting author: T***r
+2025-04-03T01:18:41.868+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:18:41.868417482+07:00
+2025-04-03T01:18:41.868+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:18:41.868493650+07:00
+2025-04-03T01:18:41.870+07:00  INFO 6157 --- [main] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=T***r, content_length=12, created=2025-04-03T01:18:41.868417482+07:00]
+2025-04-03T01:18:41.922+07:00 DEBUG 6157 --- [main] io.swagger.service.CommentService        : Created comment with ID: 1
+2025-04-03T01:18:41.922+07:00 DEBUG 6157 --- [main] io.swagger.service.CommentService        : Fetching comment by ID: 1
+2025-04-03T01:18:41.952+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting content (length: 5)
+2025-04-03T01:18:41.952+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:18:41.952253678+07:00
+2025-04-03T01:18:41.952+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:18:41.952253678+07:00
+2025-04-03T01:18:41.952+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting content (length: 6)
+2025-04-03T01:18:41.952+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:18:41.952253678+07:00
+2025-04-03T01:18:41.952+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:18:41.952253678+07:00
+2025-04-03T01:18:41.952+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting content (length: 5)
+2025-04-03T01:18:41.952+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:18:41.952253678+07:00
+2025-04-03T01:18:41.952+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:18:41.952253678+07:00
+2025-04-03T01:18:41.953+07:00  INFO 6157 --- [main] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=null, content_length=5, created=2025-04-03T01:18:41.952253678+07:00]
+2025-04-03T01:18:41.955+07:00  INFO 6157 --- [main] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=null, content_length=6, created=2025-04-03T01:18:41.952253678+07:00]
+2025-04-03T01:18:41.956+07:00  INFO 6157 --- [main] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=null, content_length=5, created=2025-04-03T01:18:41.952253678+07:00]
+2025-04-03T01:18:41.958+07:00 DEBUG 6157 --- [main] io.swagger.service.CommentService        : Fetching all comments
+2025-04-03T01:18:41.967+07:00  INFO 6157 --- [main] io.swagger.service.CommentService        : Retrieved 3 comments
+2025-04-03T01:18:41.978+07:00  INFO 6157 --- [main] io.swagger.service.CommentService        : Creating new comment. Content length: 5, Author: anonymous
+2025-04-03T01:18:41.978+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting content (length: 5)
+2025-04-03T01:18:41.978+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting author: null
+2025-04-03T01:18:41.978+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:18:41.978826912+07:00
+2025-04-03T01:18:41.978+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:18:41.978881604+07:00
+2025-04-03T01:18:41.979+07:00  INFO 6157 --- [main] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=null, content_length=5, created=2025-04-03T01:18:41.978826912+07:00]
+2025-04-03T01:18:41.980+07:00 DEBUG 6157 --- [main] io.swagger.service.CommentService        : Created comment with ID: 5
+2025-04-03T01:18:41.980+07:00 DEBUG 6157 --- [main] io.swagger.service.CommentService        : Fetching comment by ID: 999
+2025-04-03T01:18:41.984+07:00  WARN 6157 --- [main] io.swagger.service.CommentService        : Comment not found. ID: 999
+2025-04-03T01:18:42.148+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting content (length: 11)
+2025-04-03T01:18:42.149+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting author: O***r
+2025-04-03T01:18:42.149+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:18:42.148+07:00
+2025-04-03T01:18:42.149+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:18:42.148+07:00
+2025-04-03T01:18:42.149+07:00  INFO 6157 --- [main] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=O***r, content_length=11, created=2025-04-03T01:18:42.148+07:00]
+2025-04-03T01:18:42.251+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting content (length: 11)
+2025-04-03T01:18:42.251+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting author: N***r
+2025-04-03T01:18:42.252+07:00  INFO 6157 --- [main] io.swagger.service.CommentService        : Updating comment ID: 6
+2025-04-03T01:18:42.252+07:00 DEBUG 6157 --- [main] io.swagger.service.CommentService        : Original content: 'Old content', New content: 'New content'
+2025-04-03T01:18:42.252+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Updating content (length: 11 chars)
+2025-04-03T01:18:42.252+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Changing author: O***r → N***r
+2025-04-03T01:18:42.252+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-03T01:18:42.252852135+07:00
+2025-04-03T01:18:42.254+07:00  INFO 6157 --- [main] io.swagger.service.CommentService        : Successfully updated comment ID: 6
+2025-04-03T01:18:42.261+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting content (length: 9)
+2025-04-03T01:18:42.261+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting author: A***r
+2025-04-03T01:18:42.261+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:18:42.260996110+07:00
+2025-04-03T01:18:42.261+07:00 DEBUG 6157 --- [main] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:18:42.260996110+07:00
+2025-04-03T01:18:42.261+07:00  INFO 6157 --- [main] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=A***r, content_length=9, created=2025-04-03T01:18:42.260996110+07:00]
+2025-04-03T01:18:42.263+07:00  INFO 6157 --- [main] io.swagger.service.CommentService        : Deleting comment ID: 7
+2025-04-03T01:18:42.266+07:00  INFO 6157 --- [main] io.swagger.service.CommentService        : Successfully deleted comment ID: 7
+2025-04-03T01:18:42.508+07:00  INFO 6157 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:18:42.509+07:00  INFO 6157 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-03T01:18:42.511+07:00  INFO 6157 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-03T01:20:08.779+07:00  INFO 6929 --- [main] i.s.controller.CommentControllerIT       : Testcontainers PostgreSQL configured: jdbc:postgresql://localhost:32771/testdb?loggerLevel=OFF
+2025-04-03T01:20:08.785+07:00  INFO 6929 --- [main] i.s.controller.CommentControllerIT       : Starting CommentControllerIT using Java 21.0.6 with PID 6929 (started by dannnytt in /home/dannnytt/study/sibsutis/6sem/rspo/homeworks/lab6)
+2025-04-03T01:20:08.785+07:00 DEBUG 6929 --- [main] i.s.controller.CommentControllerIT       : Running with Spring Boot v3.3.3, Spring v6.1.12
+2025-04-03T01:20:08.785+07:00  INFO 6929 --- [main] i.s.controller.CommentControllerIT       : The following 1 profile is active: "test"
+2025-04-03T01:20:09.363+07:00  INFO 6929 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03T01:20:09.415+07:00  INFO 6929 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2025-04-03T01:20:09.807+07:00  INFO 6929 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-03T01:20:09.818+07:00  INFO 6929 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-03T01:20:09.818+07:00  INFO 6929 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-04-03T01:20:09.866+07:00  INFO 6929 --- [main] o.a.c.c.C.[.[localhost].[/api/v3]        : Initializing Spring embedded WebApplicationContext
+2025-04-03T01:20:09.866+07:00  INFO 6929 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1067 ms
+2025-04-03T01:20:10.150+07:00  INFO 6929 --- [main] liquibase.database                       : Set default schema name to public
+2025-04-03T01:20:10.347+07:00  INFO 6929 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-03T01:20:10.372+07:00  INFO 6929 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-04-03T01:20:10.373+07:00  INFO 6929 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-03T01:20:10.378+07:00  INFO 6929 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-04-03T01:20:10.379+07:00  INFO 6929 --- [main] liquibase.util                           : Run:                          0
+2025-04-03T01:20:10.379+07:00  INFO 6929 --- [main] liquibase.util                           : Previously run:               1
+2025-04-03T01:20:10.379+07:00  INFO 6929 --- [main] liquibase.util                           : Filtered out:                 0
+2025-04-03T01:20:10.379+07:00  INFO 6929 --- [main] liquibase.util                           : -------------------------------
+2025-04-03T01:20:10.379+07:00  INFO 6929 --- [main] liquibase.util                           : Total change sets:            1
+2025-04-03T01:20:10.379+07:00  INFO 6929 --- [main] liquibase.util                           : Update summary generated
+2025-04-03T01:20:10.392+07:00  INFO 6929 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2025-04-03T01:20:10.392+07:00  INFO 6929 --- [main] liquibase.command                        : Command execution complete
+2025-04-03T01:20:10.446+07:00  INFO 6929 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03T01:20:10.488+07:00  INFO 6929 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-04-03T01:20:10.510+07:00  INFO 6929 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-03T01:20:10.736+07:00  INFO 6929 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03T01:20:10.755+07:00  INFO 6929 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-03T01:20:10.768+07:00  INFO 6929 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@445c693
+2025-04-03T01:20:10.769+07:00  INFO 6929 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-03T01:20:10.789+07:00  WARN 6929 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03T01:20:11.332+07:00  INFO 6929 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03T01:20:11.365+07:00  INFO 6929 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:20:11.569+07:00  INFO 6929 --- [main] io.swagger.service.CommentService        : CommentService initialized with CommentRepository
+2025-04-03T01:20:11.577+07:00 DEBUG 6929 --- [main] i.swagger.controller.CommentController   : CommentController initialized with CommentService
+2025-04-03T01:20:11.680+07:00  WARN 6929 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03T01:20:12.020+07:00  INFO 6929 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 37511 (http) with context path '/api/v3'
+2025-04-03T01:20:12.028+07:00  INFO 6929 --- [main] i.s.controller.CommentControllerIT       : Started CommentControllerIT in 3.461 seconds (process running for 22.822)
+2025-04-03T01:20:12.416+07:00  INFO 6929 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[.[localhost].[/api/v3]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-03T01:20:12.417+07:00  INFO 6929 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-03T01:20:12.418+07:00  INFO 6929 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-03T01:20:12.429+07:00  WARN 6929 --- [http-nio-auto-1-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2025-04-03T01:20:12.513+07:00  INFO 6929 --- [http-nio-auto-1-exec-2] i.swagger.controller.CommentController   : GET /api/v3/comment/99999 | Fetching comment by ID
+2025-04-03T01:20:12.517+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-2] io.swagger.service.CommentService        : Fetching comment by ID: 99999
+2025-04-03T01:20:12.555+07:00  WARN 6929 --- [http-nio-auto-1-exec-2] io.swagger.service.CommentService        : Comment not found. ID: 99999
+2025-04-03T01:20:12.558+07:00 ERROR 6929 --- [http-nio-auto-1-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api/v3] threw exception [Request processing failed: java.lang.RuntimeException: Comment not found with id: 99999] with root cause
+
+java.lang.RuntimeException: Comment not found with id: 99999
+	at io.swagger.service.CommentService.lambda$getCommentById$1(CommentService.java:81) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at io.swagger.service.CommentService.getCommentById(CommentService.java:79) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.12.jar:6.1.12]
+	at io.swagger.service.CommentService$$SpringCGLIB$$0.getCommentById(<generated>) ~[classes/:na]
+	at io.swagger.controller.CommentController.getCommentById(CommentController.java:55) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-04-03T01:20:12.614+07:00  WARN 6929 --- [http-nio-auto-1-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2025-04-03T01:20:12.629+07:00  INFO 6929 --- [http-nio-auto-1-exec-4] i.swagger.controller.CommentController   : POST /api/v3/comment | Request: class CommentRequest {
+    content: Original content
+    author: Original author
+}
+2025-04-03T01:20:12.629+07:00  INFO 6929 --- [http-nio-auto-1-exec-4] io.swagger.service.CommentService        : Creating new comment. Content length: 16, Author: provided
+2025-04-03T01:20:12.629+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] io.swagger.model.Comment                 : Setting content (length: 16)
+2025-04-03T01:20:12.629+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] io.swagger.model.Comment                 : Setting author: O***r
+2025-04-03T01:20:12.629+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:20:12.629902315+07:00
+2025-04-03T01:20:12.629+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:20:12.629962936+07:00
+2025-04-03T01:20:12.633+07:00  INFO 6929 --- [http-nio-auto-1-exec-4] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=O***r, content_length=16, created=2025-04-03T01:20:12.629902315+07:00]
+2025-04-03T01:20:12.669+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] io.swagger.service.CommentService        : Created comment with ID: 1
+2025-04-03T01:20:12.674+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] i.swagger.controller.CommentController   : Created comment with ID: 1
+2025-04-03T01:20:12.678+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing comment ID: null → 1
+2025-04-03T01:20:12.678+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating content (length: 16 chars)
+2025-04-03T01:20:12.678+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing author: null → O***r
+2025-04-03T01:20:12.679+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating creation date: 2025-04-02T18:20:12.629902315Z
+2025-04-03T01:20:12.679+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-02T18:20:12.629962936Z
+2025-04-03T01:20:12.679+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Setting comment ID: 1
+2025-04-03T01:20:12.679+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Setting content (length: 15)
+2025-04-03T01:20:12.679+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Setting author: U***r
+2025-04-03T01:20:12.682+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Changing comment ID: null → 1
+2025-04-03T01:20:12.682+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Updating content (length: 15 chars)
+2025-04-03T01:20:12.682+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Changing author: null → U***r
+2025-04-03T01:20:12.682+07:00  INFO 6929 --- [http-nio-auto-1-exec-5] i.swagger.controller.CommentController   : PUT /api/v3/comment | Updating comment ID: 1
+2025-04-03T01:20:12.683+07:00  INFO 6929 --- [http-nio-auto-1-exec-5] io.swagger.service.CommentService        : Updating comment ID: 1
+2025-04-03T01:20:12.685+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Comment loaded: Comment[id=1, author=O***r, content_length=16, created=2025-04-02T18:20:12.629902Z]
+2025-04-03T01:20:12.686+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.service.CommentService        : Original content: 'Original content', New content: 'Updated content'
+2025-04-03T01:20:12.686+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Updating content (length: 15 chars)
+2025-04-03T01:20:12.686+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Changing author: O***r → U***r
+2025-04-03T01:20:12.686+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Updating modification date: 2025-04-03T01:20:12.686477454+07:00
+2025-04-03T01:20:12.687+07:00  INFO 6929 --- [http-nio-auto-1-exec-5] io.swagger.service.CommentService        : Successfully updated comment ID: 1
+2025-04-03T01:20:12.688+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Updating comment ID: 1
+2025-04-03T01:20:12.695+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] i.swagger.controller.CommentController   : Successfully updated comment ID: 1
+2025-04-03T01:20:12.696+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing comment ID: null → 1
+2025-04-03T01:20:12.696+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating content (length: 15 chars)
+2025-04-03T01:20:12.696+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing author: null → U***r
+2025-04-03T01:20:12.696+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating creation date: 2025-04-02T18:20:12.629902Z
+2025-04-03T01:20:12.696+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-02T18:20:12.686477454Z
+2025-04-03T01:20:12.702+07:00  WARN 6929 --- [http-nio-auto-1-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2025-04-03T01:20:12.707+07:00  INFO 6929 --- [http-nio-auto-1-exec-7] i.swagger.controller.CommentController   : POST /api/v3/comment | Request: class CommentRequest {
+    content: Test content
+    author: Test author
+}
+2025-04-03T01:20:12.708+07:00  INFO 6929 --- [http-nio-auto-1-exec-7] io.swagger.service.CommentService        : Creating new comment. Content length: 12, Author: provided
+2025-04-03T01:20:12.708+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-7] io.swagger.model.Comment                 : Setting content (length: 12)
+2025-04-03T01:20:12.708+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-7] io.swagger.model.Comment                 : Setting author: T***r
+2025-04-03T01:20:12.708+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-7] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:20:12.708412190+07:00
+2025-04-03T01:20:12.708+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-7] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:20:12.708451557+07:00
+2025-04-03T01:20:12.708+07:00  INFO 6929 --- [http-nio-auto-1-exec-7] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=T***r, content_length=12, created=2025-04-03T01:20:12.708412190+07:00]
+2025-04-03T01:20:12.710+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-7] io.swagger.service.CommentService        : Created comment with ID: 2
+2025-04-03T01:20:12.710+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-7] i.swagger.controller.CommentController   : Created comment with ID: 2
+2025-04-03T01:20:12.711+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing comment ID: null → 2
+2025-04-03T01:20:12.711+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating content (length: 12 chars)
+2025-04-03T01:20:12.711+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing author: null → T***r
+2025-04-03T01:20:12.711+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating creation date: 2025-04-02T18:20:12.708412190Z
+2025-04-03T01:20:12.711+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-02T18:20:12.708451557Z
+2025-04-03T01:20:12.713+07:00  INFO 6929 --- [http-nio-auto-1-exec-8] i.swagger.controller.CommentController   : GET /api/v3/comment/2 | Fetching comment by ID
+2025-04-03T01:20:12.713+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-8] io.swagger.service.CommentService        : Fetching comment by ID: 2
+2025-04-03T01:20:12.714+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-8] io.swagger.model.Comment                 : Comment loaded: Comment[id=2, author=T***r, content_length=12, created=2025-04-02T18:20:12.708412Z]
+2025-04-03T01:20:12.715+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-8] i.swagger.controller.CommentController   : Found comment: Comment{id=2, content='Test content', author='T***r', createdAt=2025-04-02T18:20:12.708412Z, updatedAt=2025-04-02T18:20:12.708452Z}
+2025-04-03T01:20:12.716+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing comment ID: null → 2
+2025-04-03T01:20:12.716+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating content (length: 12 chars)
+2025-04-03T01:20:12.716+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing author: null → T***r
+2025-04-03T01:20:12.717+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating creation date: 2025-04-02T18:20:12.708412Z
+2025-04-03T01:20:12.717+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-02T18:20:12.708452Z
+2025-04-03T01:20:12.722+07:00  WARN 6929 --- [http-nio-auto-1-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2025-04-03T01:20:12.728+07:00  INFO 6929 --- [http-nio-auto-1-exec-10] i.swagger.controller.CommentController   : POST /api/v3/comment | Request: class CommentRequest {
+    content: To delete
+    author: Author
+}
+2025-04-03T01:20:12.729+07:00  INFO 6929 --- [http-nio-auto-1-exec-10] io.swagger.service.CommentService        : Creating new comment. Content length: 9, Author: provided
+2025-04-03T01:20:12.729+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-10] io.swagger.model.Comment                 : Setting content (length: 9)
+2025-04-03T01:20:12.729+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-10] io.swagger.model.Comment                 : Setting author: A***r
+2025-04-03T01:20:12.729+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-10] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:20:12.729532470+07:00
+2025-04-03T01:20:12.729+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-10] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:20:12.729566059+07:00
+2025-04-03T01:20:12.729+07:00  INFO 6929 --- [http-nio-auto-1-exec-10] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=A***r, content_length=9, created=2025-04-03T01:20:12.729532470+07:00]
+2025-04-03T01:20:12.731+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-10] io.swagger.service.CommentService        : Created comment with ID: 3
+2025-04-03T01:20:12.731+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-10] i.swagger.controller.CommentController   : Created comment with ID: 3
+2025-04-03T01:20:12.733+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing comment ID: null → 3
+2025-04-03T01:20:12.733+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating content (length: 9 chars)
+2025-04-03T01:20:12.733+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing author: null → A***r
+2025-04-03T01:20:12.733+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating creation date: 2025-04-02T18:20:12.729532470Z
+2025-04-03T01:20:12.733+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-02T18:20:12.729566059Z
+2025-04-03T01:20:12.736+07:00  INFO 6929 --- [http-nio-auto-1-exec-1] i.swagger.controller.CommentController   : DELETE /api/v3/comment/3 | Deleting comment
+2025-04-03T01:20:12.736+07:00  INFO 6929 --- [http-nio-auto-1-exec-1] io.swagger.service.CommentService        : Deleting comment ID: 3
+2025-04-03T01:20:12.737+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-1] io.swagger.model.Comment                 : Comment loaded: Comment[id=3, author=A***r, content_length=9, created=2025-04-02T18:20:12.729532Z]
+2025-04-03T01:20:12.742+07:00  INFO 6929 --- [http-nio-auto-1-exec-1] io.swagger.service.CommentService        : Successfully deleted comment ID: 3
+2025-04-03T01:20:12.744+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-1] i.swagger.controller.CommentController   : Comment with ID 3 successfully deleted
+2025-04-03T01:20:12.746+07:00  INFO 6929 --- [http-nio-auto-1-exec-2] i.swagger.controller.CommentController   : GET /api/v3/comment/3 | Fetching comment by ID
+2025-04-03T01:20:12.747+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-2] io.swagger.service.CommentService        : Fetching comment by ID: 3
+2025-04-03T01:20:12.747+07:00  WARN 6929 --- [http-nio-auto-1-exec-2] io.swagger.service.CommentService        : Comment not found. ID: 3
+2025-04-03T01:20:12.748+07:00 ERROR 6929 --- [http-nio-auto-1-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api/v3] threw exception [Request processing failed: java.lang.RuntimeException: Comment not found with id: 3] with root cause
+
+java.lang.RuntimeException: Comment not found with id: 3
+	at io.swagger.service.CommentService.lambda$getCommentById$1(CommentService.java:81) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at io.swagger.service.CommentService.getCommentById(CommentService.java:79) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.12.jar:6.1.12]
+	at io.swagger.service.CommentService$$SpringCGLIB$$0.getCommentById(<generated>) ~[classes/:na]
+	at io.swagger.controller.CommentController.getCommentById(CommentController.java:55) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-04-03T01:20:12.757+07:00  WARN 6929 --- [http-nio-auto-1-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2025-04-03T01:20:12.762+07:00  INFO 6929 --- [http-nio-auto-1-exec-4] i.swagger.controller.CommentController   : POST /api/v3/comment | Request: class CommentRequest {
+    content: First
+    author: Author1
+}
+2025-04-03T01:20:12.763+07:00  INFO 6929 --- [http-nio-auto-1-exec-4] io.swagger.service.CommentService        : Creating new comment. Content length: 5, Author: provided
+2025-04-03T01:20:12.763+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] io.swagger.model.Comment                 : Setting content (length: 5)
+2025-04-03T01:20:12.763+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] io.swagger.model.Comment                 : Setting author: A***1
+2025-04-03T01:20:12.763+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:20:12.763143626+07:00
+2025-04-03T01:20:12.763+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:20:12.763168076+07:00
+2025-04-03T01:20:12.763+07:00  INFO 6929 --- [http-nio-auto-1-exec-4] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=A***1, content_length=5, created=2025-04-03T01:20:12.763143626+07:00]
+2025-04-03T01:20:12.766+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] io.swagger.service.CommentService        : Created comment with ID: 4
+2025-04-03T01:20:12.767+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-4] i.swagger.controller.CommentController   : Created comment with ID: 4
+2025-04-03T01:20:12.769+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing comment ID: null → 4
+2025-04-03T01:20:12.769+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating content (length: 5 chars)
+2025-04-03T01:20:12.769+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing author: null → A***1
+2025-04-03T01:20:12.769+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating creation date: 2025-04-02T18:20:12.763143626Z
+2025-04-03T01:20:12.769+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-02T18:20:12.763168076Z
+2025-04-03T01:20:12.773+07:00  INFO 6929 --- [http-nio-auto-1-exec-5] i.swagger.controller.CommentController   : POST /api/v3/comment | Request: class CommentRequest {
+    content: Second
+    author: Author2
+}
+2025-04-03T01:20:12.773+07:00  INFO 6929 --- [http-nio-auto-1-exec-5] io.swagger.service.CommentService        : Creating new comment. Content length: 6, Author: provided
+2025-04-03T01:20:12.773+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Setting content (length: 6)
+2025-04-03T01:20:12.774+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Setting author: A***2
+2025-04-03T01:20:12.774+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:20:12.774101522+07:00
+2025-04-03T01:20:12.774+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:20:12.774142284+07:00
+2025-04-03T01:20:12.774+07:00  INFO 6929 --- [http-nio-auto-1-exec-5] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=A***2, content_length=6, created=2025-04-03T01:20:12.774101522+07:00]
+2025-04-03T01:20:12.776+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] io.swagger.service.CommentService        : Created comment with ID: 5
+2025-04-03T01:20:12.777+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-5] i.swagger.controller.CommentController   : Created comment with ID: 5
+2025-04-03T01:20:12.778+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing comment ID: null → 5
+2025-04-03T01:20:12.778+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating content (length: 6 chars)
+2025-04-03T01:20:12.778+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing author: null → A***2
+2025-04-03T01:20:12.778+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating creation date: 2025-04-02T18:20:12.774101522Z
+2025-04-03T01:20:12.778+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-02T18:20:12.774142284Z
+2025-04-03T01:20:12.780+07:00  INFO 6929 --- [http-nio-auto-1-exec-6] i.swagger.controller.CommentController   : GET /api/v3/comment | Fetching all comments
+2025-04-03T01:20:12.780+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-6] io.swagger.service.CommentService        : Fetching all comments
+2025-04-03T01:20:12.840+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-6] io.swagger.model.Comment                 : Comment loaded: Comment[id=1, author=U***r, content_length=15, created=2025-04-02T18:20:12.629902Z]
+2025-04-03T01:20:12.840+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-6] io.swagger.model.Comment                 : Comment loaded: Comment[id=2, author=T***r, content_length=12, created=2025-04-02T18:20:12.708412Z]
+2025-04-03T01:20:12.840+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-6] io.swagger.model.Comment                 : Comment loaded: Comment[id=4, author=A***1, content_length=5, created=2025-04-02T18:20:12.763144Z]
+2025-04-03T01:20:12.840+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-6] io.swagger.model.Comment                 : Comment loaded: Comment[id=5, author=A***2, content_length=6, created=2025-04-02T18:20:12.774102Z]
+2025-04-03T01:20:12.840+07:00  INFO 6929 --- [http-nio-auto-1-exec-6] io.swagger.service.CommentService        : Retrieved 4 comments
+2025-04-03T01:20:12.841+07:00 DEBUG 6929 --- [http-nio-auto-1-exec-6] i.swagger.controller.CommentController   : Found 4 comments
+2025-04-03T01:20:12.844+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing comment ID: null → 1
+2025-04-03T01:20:12.844+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating content (length: 15 chars)
+2025-04-03T01:20:12.844+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing author: null → U***r
+2025-04-03T01:20:12.844+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating creation date: 2025-04-02T18:20:12.629902Z
+2025-04-03T01:20:12.844+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-02T18:20:12.686477Z
+2025-04-03T01:20:12.844+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing comment ID: null → 2
+2025-04-03T01:20:12.844+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating content (length: 12 chars)
+2025-04-03T01:20:12.844+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing author: null → T***r
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating creation date: 2025-04-02T18:20:12.708412Z
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-02T18:20:12.708452Z
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing comment ID: null → 4
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating content (length: 5 chars)
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing author: null → A***1
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating creation date: 2025-04-02T18:20:12.763144Z
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-02T18:20:12.763168Z
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing comment ID: null → 5
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating content (length: 6 chars)
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Changing author: null → A***2
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating creation date: 2025-04-02T18:20:12.774102Z
+2025-04-03T01:20:12.845+07:00 DEBUG 6929 --- [main] io.swagger.model.Comment                 : Updating modification date: 2025-04-02T18:20:12.774142Z
+2025-04-03T01:20:13.056+07:00  INFO 6929 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:20:13.058+07:00  INFO 6929 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-03T01:20:13.060+07:00  INFO 6929 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-03T01:20:38.654+07:00  INFO 7636 --- [main] i.s.controller.CommentControllerIT       : Testcontainers PostgreSQL configured: jdbc:postgresql://localhost:32773/testdb?loggerLevel=OFF
+2025-04-03T01:20:38.659+07:00  INFO 7636 --- [main] i.s.controller.CommentControllerIT       : Starting CommentControllerIT using Java 21.0.6 with PID 7636 (started by dannnytt in /home/dannnytt/study/sibsutis/6sem/rspo/homeworks/lab6)
+2025-04-03T01:20:38.659+07:00 DEBUG 7636 --- [main] i.s.controller.CommentControllerIT       : Running with Spring Boot v3.3.3, Spring v6.1.12
+2025-04-03T01:20:38.660+07:00  INFO 7636 --- [main] i.s.controller.CommentControllerIT       : The following 1 profile is active: "test"
+2025-04-03T01:20:39.166+07:00  INFO 7636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03T01:20:39.213+07:00  INFO 7636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2025-04-03T01:20:39.584+07:00  INFO 7636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-04-03T01:20:39.595+07:00  INFO 7636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-03T01:20:39.596+07:00  INFO 7636 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-04-03T01:20:39.632+07:00  INFO 7636 --- [main] o.a.c.c.C.[.[localhost].[/api/v3]        : Initializing Spring embedded WebApplicationContext
+2025-04-03T01:20:39.632+07:00  INFO 7636 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 961 ms
+2025-04-03T01:20:39.914+07:00  INFO 7636 --- [main] liquibase.database                       : Set default schema name to public
+2025-04-03T01:20:40.112+07:00  INFO 7636 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-03T01:20:40.142+07:00  INFO 7636 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-04-03T01:20:40.143+07:00  INFO 7636 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-03T01:20:40.147+07:00  INFO 7636 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-04-03T01:20:40.147+07:00  INFO 7636 --- [main] liquibase.util                           : Run:                          0
+2025-04-03T01:20:40.147+07:00  INFO 7636 --- [main] liquibase.util                           : Previously run:               1
+2025-04-03T01:20:40.147+07:00  INFO 7636 --- [main] liquibase.util                           : Filtered out:                 0
+2025-04-03T01:20:40.147+07:00  INFO 7636 --- [main] liquibase.util                           : -------------------------------
+2025-04-03T01:20:40.147+07:00  INFO 7636 --- [main] liquibase.util                           : Total change sets:            1
+2025-04-03T01:20:40.148+07:00  INFO 7636 --- [main] liquibase.util                           : Update summary generated
+2025-04-03T01:20:40.161+07:00  INFO 7636 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2025-04-03T01:20:40.162+07:00  INFO 7636 --- [main] liquibase.command                        : Command execution complete
+2025-04-03T01:20:40.222+07:00  INFO 7636 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03T01:20:40.255+07:00  INFO 7636 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-04-03T01:20:40.272+07:00  INFO 7636 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-03T01:20:40.474+07:00  INFO 7636 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03T01:20:40.489+07:00  INFO 7636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-03T01:20:40.502+07:00  INFO 7636 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15a591d9
+2025-04-03T01:20:40.503+07:00  INFO 7636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-03T01:20:40.518+07:00  WARN 7636 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03T01:20:41.038+07:00  INFO 7636 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03T01:20:41.067+07:00  INFO 7636 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:20:41.237+07:00  INFO 7636 --- [main] io.swagger.service.CommentService        : CommentService initialized with CommentRepository
+2025-04-03T01:20:41.250+07:00 DEBUG 7636 --- [main] i.swagger.controller.CommentController   : CommentController initialized with CommentService
+2025-04-03T01:20:41.355+07:00  WARN 7636 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03T01:20:41.665+07:00  INFO 7636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 43241 (http) with context path '/api/v3'
+2025-04-03T01:20:41.675+07:00  INFO 7636 --- [main] i.s.controller.CommentControllerIT       : Started CommentControllerIT in 3.188 seconds (process running for 7.222)
+2025-04-03T01:20:41.680+07:00  INFO 7636 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:20:41.682+07:00  INFO 7636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-03T01:20:41.683+07:00  INFO 7636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-03T01:20:46.222+07:00  INFO 8114 --- [main] io.swagger.Swagger2SpringBoot            : Starting Swagger2SpringBoot using Java 21.0.6 with PID 8114 (/home/dannnytt/study/sibsutis/6sem/rspo/homeworks/lab6/target/classes started by dannnytt in /home/dannnytt/study/sibsutis/6sem/rspo/homeworks/lab6)
+2025-04-03T01:20:46.223+07:00 DEBUG 8114 --- [main] io.swagger.Swagger2SpringBoot            : Running with Spring Boot v3.3.3, Spring v6.1.12
+2025-04-03T01:20:46.224+07:00  INFO 8114 --- [main] io.swagger.Swagger2SpringBoot            : No active profile set, falling back to 1 default profile: "default"
+2025-04-03T01:20:46.921+07:00  INFO 8114 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03T01:20:46.987+07:00  INFO 8114 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2025-04-03T01:20:47.373+07:00  INFO 8114 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-03T01:20:47.383+07:00  INFO 8114 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-03T01:20:47.383+07:00  INFO 8114 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-04-03T01:20:47.416+07:00  INFO 8114 --- [main] o.a.c.c.C.[.[localhost].[/api/v3]        : Initializing Spring embedded WebApplicationContext
+2025-04-03T01:20:47.416+07:00  INFO 8114 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1155 ms
+2025-04-03T01:20:47.714+07:00  INFO 8114 --- [main] liquibase.database                       : Set default schema name to public
+2025-04-03T01:20:47.931+07:00  INFO 8114 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-03T01:20:47.957+07:00  INFO 8114 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-04-03T01:20:47.958+07:00  INFO 8114 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-04-03T01:20:47.962+07:00  INFO 8114 --- [main] liquibase.util                           : UPDATE SUMMARY
+2025-04-03T01:20:47.963+07:00  INFO 8114 --- [main] liquibase.util                           : Run:                          0
+2025-04-03T01:20:47.963+07:00  INFO 8114 --- [main] liquibase.util                           : Previously run:               1
+2025-04-03T01:20:47.963+07:00  INFO 8114 --- [main] liquibase.util                           : Filtered out:                 0
+2025-04-03T01:20:47.963+07:00  INFO 8114 --- [main] liquibase.util                           : -------------------------------
+2025-04-03T01:20:47.963+07:00  INFO 8114 --- [main] liquibase.util                           : Total change sets:            1
+2025-04-03T01:20:47.963+07:00  INFO 8114 --- [main] liquibase.util                           : Update summary generated
+2025-04-03T01:20:47.980+07:00  INFO 8114 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2025-04-03T01:20:47.981+07:00  INFO 8114 --- [main] liquibase.command                        : Command execution complete
+2025-04-03T01:20:48.029+07:00  INFO 8114 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03T01:20:48.064+07:00  INFO 8114 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-04-03T01:20:48.080+07:00  INFO 8114 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-03T01:20:48.268+07:00  INFO 8114 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03T01:20:48.283+07:00  INFO 8114 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-03T01:20:48.327+07:00  INFO 8114 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ad50b02
+2025-04-03T01:20:48.329+07:00  INFO 8114 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-03T01:20:48.350+07:00  WARN 8114 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03T01:20:48.926+07:00  INFO 8114 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03T01:20:48.951+07:00  INFO 8114 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:20:49.166+07:00  INFO 8114 --- [main] io.swagger.service.CommentService        : CommentService initialized with CommentRepository
+2025-04-03T01:20:49.174+07:00 DEBUG 8114 --- [main] i.swagger.controller.CommentController   : CommentController initialized with CommentService
+2025-04-03T01:20:49.263+07:00  WARN 8114 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03T01:20:49.574+07:00  INFO 8114 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v3'
+2025-04-03T01:20:49.581+07:00  INFO 8114 --- [main] io.swagger.Swagger2SpringBoot            : Started Swagger2SpringBoot in 3.706 seconds (process running for 3.994)
+2025-04-03T01:23:56.423+07:00  INFO 8114 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/api/v3]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-03T01:23:56.423+07:00  INFO 8114 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-03T01:23:56.425+07:00  INFO 8114 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-03T01:23:56.849+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve class io.swagger.model.Comment
+2025-04-03T01:23:56.854+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.Long]
+2025-04-03T01:23:56.882+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.888+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.890+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.time.OffsetDateTime]
+2025-04-03T01:23:56.899+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.time.OffsetDateTime]
+2025-04-03T01:23:56.915+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve org.springframework.http.ResponseEntity<io.swagger.model.Comment>
+2025-04-03T01:23:56.916+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class io.swagger.model.Comment]
+2025-04-03T01:23:56.917+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.Long]
+2025-04-03T01:23:56.919+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.920+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.921+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.time.OffsetDateTime]
+2025-04-03T01:23:56.922+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.time.OffsetDateTime]
+2025-04-03T01:23:56.926+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve class io.swagger.model.CommentRequest
+2025-04-03T01:23:56.927+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.928+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.936+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve org.springframework.http.ResponseEntity<io.swagger.model.Comment>
+2025-04-03T01:23:56.937+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class io.swagger.model.Comment]
+2025-04-03T01:23:56.938+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.Long]
+2025-04-03T01:23:56.943+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.944+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.946+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.time.OffsetDateTime]
+2025-04-03T01:23:56.947+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.time.OffsetDateTime]
+2025-04-03T01:23:56.955+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve org.springframework.http.ResponseEntity<java.util.List<io.swagger.model.Comment>>
+2025-04-03T01:23:56.956+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [collection type; class java.util.List, contains [simple type, class io.swagger.model.Comment]]
+2025-04-03T01:23:56.956+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class io.swagger.model.Comment]
+2025-04-03T01:23:56.957+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.Long]
+2025-04-03T01:23:56.958+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.959+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.960+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.time.OffsetDateTime]
+2025-04-03T01:23:56.961+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.time.OffsetDateTime]
+2025-04-03T01:23:56.962+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve class java.lang.Long
+2025-04-03T01:23:56.970+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve org.springframework.http.ResponseEntity<io.swagger.model.Comment>
+2025-04-03T01:23:56.970+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class io.swagger.model.Comment]
+2025-04-03T01:23:56.971+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.Long]
+2025-04-03T01:23:56.972+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.972+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.lang.String]
+2025-04-03T01:23:56.973+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.time.OffsetDateTime]
+2025-04-03T01:23:56.974+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve [simple type, class java.time.OffsetDateTime]
+2025-04-03T01:23:56.977+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] i.s.v.c.c.ModelConverterContextImpl      : resolve class java.lang.Long
+2025-04-03T01:23:56.988+07:00  INFO 8114 --- [http-nio-8080-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 299 ms
+2025-04-03T01:26:28.546+07:00  INFO 8114 --- [http-nio-8080-exec-10] i.swagger.controller.CommentController   : POST /api/v3/comment | Request: class CommentRequest {
+    content: Good recipe!
+    author: Sam
+}
+2025-04-03T01:26:28.554+07:00  INFO 8114 --- [http-nio-8080-exec-10] io.swagger.service.CommentService        : Creating new comment. Content length: 12, Author: provided
+2025-04-03T01:26:28.554+07:00 DEBUG 8114 --- [http-nio-8080-exec-10] io.swagger.model.Comment                 : Setting content (length: 12)
+2025-04-03T01:26:28.555+07:00 DEBUG 8114 --- [http-nio-8080-exec-10] io.swagger.model.Comment                 : Setting author: S***m
+2025-04-03T01:26:28.555+07:00 DEBUG 8114 --- [http-nio-8080-exec-10] io.swagger.model.Comment                 : Setting creation date: 2025-04-03T01:26:28.555286175+07:00
+2025-04-03T01:26:28.555+07:00 DEBUG 8114 --- [http-nio-8080-exec-10] io.swagger.model.Comment                 : Setting update date: 2025-04-03T01:26:28.555345351+07:00
+2025-04-03T01:26:28.564+07:00  INFO 8114 --- [http-nio-8080-exec-10] io.swagger.model.Comment                 : Creating new comment: Comment[id=null, author=S***m, content_length=12, created=2025-04-03T01:26:28.555286175+07:00]
+2025-04-03T01:26:28.617+07:00 DEBUG 8114 --- [http-nio-8080-exec-10] io.swagger.service.CommentService        : Created comment with ID: 1
+2025-04-03T01:26:28.626+07:00 DEBUG 8114 --- [http-nio-8080-exec-10] i.swagger.controller.CommentController   : Created comment with ID: 1
+2025-04-03T01:26:43.113+07:00  INFO 8114 --- [http-nio-8080-exec-1] i.swagger.controller.CommentController   : GET /api/v3/comment/2 | Fetching comment by ID
+2025-04-03T01:26:43.113+07:00 DEBUG 8114 --- [http-nio-8080-exec-1] io.swagger.service.CommentService        : Fetching comment by ID: 2
+2025-04-03T01:26:43.132+07:00  WARN 8114 --- [http-nio-8080-exec-1] io.swagger.service.CommentService        : Comment not found. ID: 2
+2025-04-03T01:26:43.135+07:00 ERROR 8114 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api/v3] threw exception [Request processing failed: java.lang.RuntimeException: Comment not found with id: 2] with root cause
+
+java.lang.RuntimeException: Comment not found with id: 2
+	at io.swagger.service.CommentService.lambda$getCommentById$1(CommentService.java:81) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at io.swagger.service.CommentService.getCommentById(CommentService.java:79) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.12.jar:6.1.12]
+	at io.swagger.service.CommentService$$SpringCGLIB$$0.getCommentById(<generated>) ~[classes/:na]
+	at io.swagger.controller.CommentController.getCommentById(CommentController.java:55) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-04-03T01:26:50.140+07:00  INFO 8114 --- [http-nio-8080-exec-3] i.swagger.controller.CommentController   : GET /api/v3/comment/1 | Fetching comment by ID
+2025-04-03T01:26:50.141+07:00 DEBUG 8114 --- [http-nio-8080-exec-3] io.swagger.service.CommentService        : Fetching comment by ID: 1
+2025-04-03T01:26:50.144+07:00 DEBUG 8114 --- [http-nio-8080-exec-3] io.swagger.model.Comment                 : Comment loaded: Comment[id=1, author=S***m, content_length=12, created=2025-04-02T18:26:28.555286Z]
+2025-04-03T01:26:50.145+07:00 DEBUG 8114 --- [http-nio-8080-exec-3] i.swagger.controller.CommentController   : Found comment: Comment{id=1, content='Good recipe!', author='S***m', createdAt=2025-04-02T18:26:28.555286Z, updatedAt=2025-04-02T18:26:28.555345Z}
+2025-04-03T01:27:14.190+07:00  INFO 8114 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:27:14.192+07:00  INFO 8114 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-03T01:27:14.193+07:00  INFO 8114 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-03T10:00:37.941+07:00  INFO 5633 --- [main] io.swagger.Swagger2SpringBoot            : Starting Swagger2SpringBoot using Java 21.0.6 with PID 5633 (/home/dannnytt/study/sibsutis/6sem/rspo/homeworks/lab6/target/classes started by dannnytt in /home/dannnytt/study/sibsutis/6sem/rspo/homeworks/lab6)
+2025-04-03T10:00:37.942+07:00 DEBUG 5633 --- [main] io.swagger.Swagger2SpringBoot            : Running with Spring Boot v3.3.3, Spring v6.1.12
+2025-04-03T10:00:37.943+07:00  INFO 5633 --- [main] io.swagger.Swagger2SpringBoot            : No active profile set, falling back to 1 default profile: "default"
+2025-04-03T10:00:38.572+07:00  INFO 5633 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03T10:00:38.623+07:00  INFO 5633 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2025-04-03T10:00:38.976+07:00  INFO 5633 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-03T10:00:38.987+07:00  INFO 5633 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-03T10:00:38.987+07:00  INFO 5633 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-04-03T10:00:39.022+07:00  INFO 5633 --- [main] o.a.c.c.C.[.[localhost].[/api/v3]        : Initializing Spring embedded WebApplicationContext
+2025-04-03T10:00:39.023+07:00  INFO 5633 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1053 ms
+2025-04-03T10:00:39.382+07:00  WARN 5633 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: ВАЖНО: пользователь "postgres" не прошёл проверку подлинности (по паролю)
+2025-04-03T10:00:39.384+07:00  INFO 5633 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-03T10:00:39.395+07:00  INFO 5633 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-03T10:00:39.405+07:00 ERROR 5633 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: ВАЖНО: пользователь "postgres" не прошёл проверку подлинности (по паролю)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at io.swagger.Swagger2SpringBoot.main(Swagger2SpringBoot.java:33) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: ВАЖНО: пользователь "postgres" не прошёл проверку подлинности (по паролю)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 8 common frames omitted
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: ВАЖНО: пользователь "postgres" не прошёл проверку подлинности (по паролю)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:303) ~[liquibase-core-4.25.0.jar:na]
+	at org.springframework.boot.autoconfigure.liquibase.DataSourceClosingSpringLiquibase.afterPropertiesSet(DataSourceClosingSpringLiquibase.java:46) ~[spring-boot-autoconfigure-3.3.3.jar:3.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 15 common frames omitted
+Caused by: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: ВАЖНО: пользователь "postgres" не прошёл проверку подлинности (по паролю)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:295) ~[liquibase-core-4.25.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:184) ~[liquibase-core-4.25.0.jar:na]
+	at liquibase.Scope.child(Scope.java:193) ~[liquibase-core-4.25.0.jar:na]
+	at liquibase.Scope.child(Scope.java:183) ~[liquibase-core-4.25.0.jar:na]
+	at liquibase.Scope.child(Scope.java:162) ~[liquibase-core-4.25.0.jar:na]
+	at liquibase.Scope.child(Scope.java:250) ~[liquibase-core-4.25.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:286) ~[liquibase-core-4.25.0.jar:na]
+	... 18 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ВАЖНО: пользователь "postgres" не прошёл проверку подлинности (по паролю)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698) ~[postgresql-42.7.2.jar:42.7.2]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207) ~[postgresql-42.7.2.jar:42.7.2]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262) ~[postgresql-42.7.2.jar:42.7.2]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.7.2.jar:42.7.2]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273) ~[postgresql-42.7.2.jar:42.7.2]
+	at org.postgresql.Driver.makeConnection(Driver.java:446) ~[postgresql-42.7.2.jar:42.7.2]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.2.jar:42.7.2]
+	at org.springframework.jdbc.datasource.SimpleDriverDataSource.getConnectionFromDriver(SimpleDriverDataSource.java:144) ~[spring-jdbc-6.1.12.jar:6.1.12]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-6.1.12.jar:6.1.12]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-6.1.12.jar:6.1.12]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:290) ~[liquibase-core-4.25.0.jar:na]
+	... 24 common frames omitted
+
