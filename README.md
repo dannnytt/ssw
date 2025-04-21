@@ -15,6 +15,12 @@
 
 * Homework #5 | [📄 Task description](/docs/homework5.pdf/) | [🖥️ Code](/homeworks/lab5/) 
 
+* Homework #6 | [🖥️ Code](/homeworks/lab6/)
+
+* Homework #7 | [📄 Task description](/docs/homework7.pdf/) | [🖥️ Code](/homeworks/lab7/) 
+
+
+
 
 ## Testworks ⏱️🖥️
 
