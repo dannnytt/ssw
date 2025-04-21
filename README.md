@@ -19,6 +19,15 @@
 
 * Homework #7 | [📄 Task description](/docs/homework7.pdf/) | [🖥️ Code](/homeworks/lab7/) 
 
+* Homework #8 | [📄 Task description](/docs/homework8.pdf/) | (реализовано в #9)
+
+* Homework #9 | [📄 Task description](/docs/homework9.pdf/) | [🖥️ Code](/homeworks/lab7/)  
+  ↳ *Изначально должен был реализован единый сервис (задание #8), затем:*  
+     - Выделен отдельный сервис аутентификации  
+     
+
+
+
 
 
 
