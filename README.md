@@ -11,11 +11,11 @@
 
 * Homework #3 | [📄 Task description](/docs/homework3.pdf/) | [🖥️ Code](/homeworks/lab3/) 
 
-* Homework #4 | [📄 Task description](/docs/homework4.pdf.pdf/) | [🖥️ Code](/homeworks/lab4/) 
+* Homework #4 | [📄 Task description](/docs/homework4.pdf/) | [🖥️ Code](/homeworks/lab4/) 
 
 * Homework #5 | [📄 Task description](/docs/homework5.pdf/) | [🖥️ Code](/homeworks/lab5/) 
 
-* Homework #6 | [🖥️ Code](/homeworks/lab6/)
+* Homework #6 | [📄 Task description](/docs/homework6.pdf/) | [🖥️ Code](/homeworks/lab6/)
 
 * Homework #7 | [📄 Task description](/docs/homework7.pdf/) | [🖥️ Code](/homeworks/lab7/) 
 
