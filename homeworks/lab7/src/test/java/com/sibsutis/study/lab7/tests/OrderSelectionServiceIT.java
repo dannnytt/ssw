@@ -12,7 +12,7 @@ import com.sibsutis.study.lab7.domain.enums.OrderStatus;
 import com.sibsutis.study.lab7.domain.enums.PaymentStatus;
 import com.sibsutis.study.lab7.domain.enums.PaymentType;
 import com.sibsutis.study.lab7.domain.enums.TaxStatus;
-import com.sibsutis.study.lab7.domain.value.adress.Address;
+import com.sibsutis.study.lab7.domain.value.address.Address;
 import com.sibsutis.study.lab7.domain.value.measurements.Quantity;
 import com.sibsutis.study.lab7.domain.value.measurements.Weight;
 import com.sibsutis.study.lab7.repository.CustomerRepository;
@@ -145,6 +145,8 @@ public class OrderSelectionServiceIT {
         order1.getOrderDetails().add(orderDetail1);
         order2.getOrderDetails().add(orderDetail2);
         order3.getOrderDetails().add(orderDetail3);
+
+
 
         Credit creditPayment = new Credit(
                 15000f,

@@ -1,7 +1,7 @@
 package com.sibsutis.study.lab7.domain.entity.customer;
 
 import com.sibsutis.study.lab7.domain.entity.order.Order;
-import com.sibsutis.study.lab7.domain.value.adress.Address;
+import com.sibsutis.study.lab7.domain.value.address.Address;
 import jakarta.persistence.*;
 import lombok.*;
 
