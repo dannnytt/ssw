@@ -13,17 +13,16 @@ import java.util.List;
 @Repository
 public interface OrderRepository extends JpaRepository<Order, Integer> {
 
-    List<Order> findByCustomer_Address_City(String city);
+    List<Order> findByCustomerAddressCity(String city);
 
     List<Order> findByDateBetween(LocalDateTime start, LocalDateTime end);
 
-    List<Order> findByPayments_PaymentType(PaymentType paymentType);
+    List<Order> findByPaymentsPaymentType(PaymentType paymentType);
 
-    List<Order> findByCustomer_Name(String customerName);
+    List<Order> findByCustomerName(String customerName);
 
-    List<Order> findByPayments_PaymentStatus(PaymentStatus status);
+    List<Order> findByPaymentsPaymentStatus(PaymentStatus status);
 
     List<Order> findByOrderStatus(OrderStatus status);
-
 
 }

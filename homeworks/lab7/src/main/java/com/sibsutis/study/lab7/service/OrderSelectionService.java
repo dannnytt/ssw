@@ -22,7 +22,7 @@ public class OrderSelectionService {
     }
 
     public List<Order> getOrdersByCustomerAddressCity(String city) {
-        return repository.findByCustomer_Address_City(city);
+        return repository.findByCustomerAddressCity(city);
     }
 
     public List<Order> getOrdersByDateBetween(LocalDateTime start, LocalDateTime end) {
@@ -30,15 +30,15 @@ public class OrderSelectionService {
     }
 
     public List<Order> getOrdersByPaymentType(PaymentType type) {
-        return repository.findByPayments_PaymentType(type);
+        return repository.findByPaymentsPaymentType(type);
     }
 
     public List<Order> getOrdersByCustomerName(String name) {
-        return repository.findByCustomer_Name(name);
+        return repository.findByCustomerName(name);
     }
 
     public List<Order> getOrdersByPaymentStatus(PaymentStatus status) {
-        return repository.findByPayments_PaymentStatus(status);
+        return repository.findByPaymentsPaymentStatus(status);
     }
 
     public List<Order> getOrdersByOrderStatus(OrderStatus status) {
