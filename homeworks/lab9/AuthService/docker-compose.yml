@@ -1,0 +1,16 @@
+services:
+  postgres-auth-service:
+    image: postgres:latest
+    container_name: auth-service-db-container
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: auth_service_db
+    ports:
+      - "5002:5432"
+    volumes:
+      - postgres_data_auth:/var/lib/postgresql/data
+
+volumes:
+  postgres_data_auth:

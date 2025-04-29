@@ -4,6 +4,8 @@ import com.example.study.OrderService.domain.entity.customer.Customer;
 import com.example.study.OrderService.domain.entity.payment.Payment;
 import com.example.study.OrderService.domain.enums.OrderStatus;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 

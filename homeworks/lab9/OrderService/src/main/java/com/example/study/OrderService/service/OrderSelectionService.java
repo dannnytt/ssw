@@ -4,6 +4,7 @@ import com.example.study.OrderService.domain.entity.order.Order;
 import com.example.study.OrderService.domain.enums.OrderStatus;
 import com.example.study.OrderService.domain.enums.PaymentType;
 import com.example.study.OrderService.domain.enums.PaymentStatus;
+import com.example.study.OrderService.dto.OrderDTO;
 import com.example.study.OrderService.repository.OrderRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +22,12 @@ public class OrderSelectionService {
         this.repository = repository;
     }
 
+    public List<Order> getAllOrders() {
+        return repository.findAll();
+    }
+
     public List<Order> getOrdersByCustomerAddressCity(String city) {
-        return repository.findByCustomer_Address_City(city);
+        return repository.findByCustomerAddressCity(city);
     }
 
     public List<Order> getOrdersByDateBetween(LocalDateTime start, LocalDateTime end) {
@@ -30,19 +35,23 @@ public class OrderSelectionService {
     }
 
     public List<Order> getOrdersByPaymentType(PaymentType type) {
-        return repository.findByPayments_PaymentType(type);
+        return repository.findByPaymentsPaymentType(type);
     }
 
     public List<Order> getOrdersByCustomerName(String name) {
-        return repository.findByCustomer_Name(name);
+        return repository.findByCustomerName(name);
     }
 
     public List<Order> getOrdersByPaymentStatus(PaymentStatus status) {
-        return repository.findByPayments_PaymentStatus(status);
+        return repository.findByPaymentsPaymentStatus(status);
     }
 
     public List<Order> getOrdersByOrderStatus(OrderStatus status) {
         return repository.findByOrderStatus(status);
     }
+
+//    public Order createOrder(OrderDTO orderDTO) {
+//
+//    }
 }
 

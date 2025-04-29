@@ -4,6 +4,7 @@ import com.example.study.OrderService.domain.entity.item.Item;
 import com.example.study.OrderService.domain.enums.TaxStatus;
 import com.example.study.OrderService.domain.value.measurements.Quantity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 

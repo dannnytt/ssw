@@ -3,6 +3,7 @@ package com.example.study.OrderService.domain.entity.customer;
 import com.example.study.OrderService.domain.entity.order.Order;
 import com.example.study.OrderService.domain.value.address.Address;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
