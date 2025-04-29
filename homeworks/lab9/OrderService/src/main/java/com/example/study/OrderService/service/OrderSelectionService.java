@@ -1,10 +1,12 @@
-package com.sibsutis.study.lab7.service;
+package com.example.study.OrderService.service;
 
-import com.sibsutis.study.lab7.domain.entity.order.Order;
-import com.sibsutis.study.lab7.domain.enums.OrderStatus;
-import com.sibsutis.study.lab7.domain.enums.PaymentStatus;
-import com.sibsutis.study.lab7.domain.enums.PaymentType;
-import com.sibsutis.study.lab7.repository.OrderRepository;
+import com.example.study.OrderService.domain.entity.order.Order;
+import com.example.study.OrderService.domain.enums.OrderStatus;
+import com.example.study.OrderService.domain.enums.PaymentType;
+import com.example.study.OrderService.domain.enums.PaymentStatus;
+import com.example.study.OrderService.dto.OrderDTO;
+import com.example.study.OrderService.repository.OrderRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,12 +15,15 @@ import java.util.List;
 
 @Service
 public class OrderSelectionService {
-
     private final OrderRepository repository;
 
     @Autowired
     public  OrderSelectionService(OrderRepository repository) {
         this.repository = repository;
+    }
+
+    public List<Order> getAllOrders() {
+        return repository.findAll();
     }
 
     public List<Order> getOrdersByCustomerAddressCity(String city) {
@@ -44,4 +49,9 @@ public class OrderSelectionService {
     public List<Order> getOrdersByOrderStatus(OrderStatus status) {
         return repository.findByOrderStatus(status);
     }
+
+//    public Order createOrder(OrderDTO orderDTO) {
+//
+//    }
 }
+

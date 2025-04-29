@@ -1,28 +1,21 @@
-package com.sibsutis.study.lab7.tests;
+package com.example.study.OrderService.tests;
 
-import com.sibsutis.study.lab7.config.TestContainersConfig;
-import com.sibsutis.study.lab7.domain.entity.customer.Customer;
-import com.sibsutis.study.lab7.domain.entity.item.Item;
-import com.sibsutis.study.lab7.domain.entity.order.Order;
-import com.sibsutis.study.lab7.domain.entity.order.OrderDetail;
-import com.sibsutis.study.lab7.domain.entity.payment.Cash;
-import com.sibsutis.study.lab7.domain.entity.payment.Check;
-import com.sibsutis.study.lab7.domain.entity.payment.Credit;
-import com.sibsutis.study.lab7.domain.enums.OrderStatus;
-import com.sibsutis.study.lab7.domain.enums.PaymentStatus;
-import com.sibsutis.study.lab7.domain.enums.PaymentType;
-import com.sibsutis.study.lab7.domain.enums.TaxStatus;
-import com.sibsutis.study.lab7.domain.value.address.Address;
-import com.sibsutis.study.lab7.domain.value.measurements.Quantity;
-import com.sibsutis.study.lab7.domain.value.measurements.Weight;
-import com.sibsutis.study.lab7.repository.CustomerRepository;
-import com.sibsutis.study.lab7.repository.ItemRepository;
-import com.sibsutis.study.lab7.repository.OrderRepository;
-import com.sibsutis.study.lab7.service.OrderSelectionService;
+import com.example.study.OrderService.config.TestContainersConfig;
+import com.example.study.OrderService.domain.entity.customer.*;
+import com.example.study.OrderService.domain.entity.order.*;
+import com.example.study.OrderService.domain.entity.item.*;
+import com.example.study.OrderService.domain.entity.payment.*;
+import com.example.study.OrderService.domain.enums.*;
+import com.example.study.OrderService.domain.value.address.*;
+import com.example.study.OrderService.domain.value.measurements.*;
+
+
+import com.example.study.OrderService.repository.*;
+import com.example.study.OrderService.service.*;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 

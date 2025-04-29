@@ -1,9 +1,10 @@
-package com.sibsutis.study.lab7.repository;
+package com.example.study.OrderService.repository;
 
-import com.sibsutis.study.lab7.domain.entity.order.Order;
-import com.sibsutis.study.lab7.domain.enums.OrderStatus;
-import com.sibsutis.study.lab7.domain.enums.PaymentStatus;
-import com.sibsutis.study.lab7.domain.enums.PaymentType;
+import com.example.study.OrderService.domain.entity.order.Order;
+import com.example.study.OrderService.domain.enums.OrderStatus;
+import com.example.study.OrderService.domain.enums.PaymentType;
+import com.example.study.OrderService.domain.enums.PaymentStatus;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -12,6 +13,8 @@ import java.util.List;
 
 @Repository
 public interface OrderRepository extends JpaRepository<Order, Integer> {
+
+    List<Order> findAll();
 
     List<Order> findByCustomerAddressCity(String city);
 
@@ -24,5 +27,4 @@ public interface OrderRepository extends JpaRepository<Order, Integer> {
     List<Order> findByPaymentsPaymentStatus(PaymentStatus status);
 
     List<Order> findByOrderStatus(OrderStatus status);
-
 }

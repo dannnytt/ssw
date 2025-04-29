@@ -1,7 +1,9 @@
-package com.sibsutis.study.lab7.domain.entity.customer;
+package com.example.study.OrderService.domain.entity.customer;
 
-import com.sibsutis.study.lab7.domain.entity.order.Order;
-import com.sibsutis.study.lab7.domain.value.address.Address;
+import com.example.study.OrderService.domain.entity.order.Order;
+import com.example.study.OrderService.domain.value.address.Address;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
